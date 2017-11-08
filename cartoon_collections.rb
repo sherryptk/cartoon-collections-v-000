@@ -23,4 +23,5 @@ def find_the_cheese(array)
   array.each do |element|
     if element = cheese_types[1] || cheese_types[2] || cheese_types[3]
       return element
+    end
 end
