@@ -20,9 +20,11 @@ def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-  array.each do |element|
-    if element == cheese_types[1] || element == cheese_types[2] || element == cheese_types[3]
-      return element
-    end
-  end
+  array.detect{ |i| i == cheese_types[1] || i == cheese_types[2] || i == cheese_types[3]}
+
+  # array.each do |element|
+  #   if element == cheese_types[1] || element == cheese_types[2] || element == cheese_types[3]
+  #     return element
+  #   end
+  # end
 end
