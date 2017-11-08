@@ -23,7 +23,6 @@ def find_the_cheese(array)
   array.each do |element|
     if element == cheese_types[1] || element == cheese_types[2] || element == cheese_types[3]
       return element
-      break
     end
   end
 end
